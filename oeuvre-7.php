@@ -10,31 +10,28 @@
 </head>
 <body>
 <header>
-    <a href="index.html"><img src="img/logo.png" alt="Logo Artbox" id="logo"></a>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-        </ul>
-    </nav>
+    <?php
+        include 'header.php';
+    ?>
 </header>
 <main>
     <article id="detail-oeuvre">
         <div id="img-oeuvre">
-            <img src="img/pawel-czerwinski.png" alt="Chromatics">
+            <img src="img/jazmin-quaynor.png" alt="Digital Negative">
         </div>
         <div id="contenu-oeuvre">
-            <h1>Chromatics</h1>
-            <p class="description">Jean-Michel Delatronchette</p>
+            <h1>Digital Negative</h1>
+            <p class="description">Hamish McKee</p>
             <p class="description-complete">
-                Vivamus commodo non libero at hendrerit. In lacinia dui sit amet pellentesque iaculis. Donec at ultricies sem porttitor.
+                Integer in nisl posuere, pulvinar ex ac, tincidunt risus. Nullam vel lorem et leo dignissim accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor, magna non consectetur dapibus, est libero iaculis lacus, eget semper turpis orci vitae felis. Fusce eget molestie.
             </p>
         </div>
     </article>
 </main>
 <footer>
-    <p>
-        <strong>© THE ARTBOX</strong> - <em>Tous droits réservés</em>
-    </p>
+    <?php
+        include "footer.php";
+    ?>
 </footer>
 </body>
 </html>
