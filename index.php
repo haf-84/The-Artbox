@@ -125,7 +125,7 @@
     </main>
     <footer>
         <?php
-            include "fooder.php";
+            include "footer.php";
         ?>
     </footer>
 </body>
