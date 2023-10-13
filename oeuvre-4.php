@@ -9,11 +9,9 @@
     <title>The ArtBox</title>
 </head>
 <body>
-<header>
     <?php
     include 'header.php';
     ?>
-</header>
 <main>
     <article id="detail-oeuvre">
         <div id="img-oeuvre">
@@ -28,10 +26,8 @@
         </div>
     </article>
 </main>
-<footer>
     <?php
         include "footer.php";
     ?>
-</footer>
 </body>
 </html>

@@ -9,11 +9,8 @@
     <title>The ArtBox</title>
 </head>
 <body>
-    <header>
-        <?php
-            include "header.php";
-        ?>
-    </header>
+    <!-- Header -->
+    <?php include "header.php"; ?>
     <main>
         <div id="liste-oeuvres">
             <article class="oeuvre">
@@ -123,10 +120,9 @@
             </article>
         </div>
     </main>
-    <footer>
-        <?php
-            include "footer.php";
-        ?>
-    </footer>
+    
+    <!-- Footer -->
+    <?php include "footer.php"; ?>
+    
 </body>
 </html>
