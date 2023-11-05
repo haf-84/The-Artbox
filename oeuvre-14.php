@@ -13,18 +13,19 @@
         include 'header.php';
     ?>
 <main>
-    <article id="detail-oeuvre">
-        <div id="img-oeuvre">
-            <img src="img/steve-johnson-4.png" alt="Mirage">
-        </div>
-        <div id="contenu-oeuvre">
-            <h1>Mirage</h1>
-            <p class="description">Stéphanie Kaiser</p>
-            <p class="description-complete">
-                Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam iaculis lorem ac ex tristique egestas et nec sapien. Donec tincidunt id erat sit amet tempus. Nullam vel molestie dui. Duis a neque massa. Vivamus quis ornare lacus. Nullam eleifend condimentum egestas. Vivamus magna purus, fermentum mollis mauris sed, consectetur interdum libero. Duis interdum tortor tellus, eget sollicitudin quis.
-            </p>
-        </div>
-    </article>
+    <?php include 'oeuvres.php';
+        echo '<article id="detail-oeuvre">';
+        echo '<div id="img-oeuvre">';
+        echo '<img src="'.$oeuvre14['img'].'" alt="'.$oeuvre14['alt'].'">';
+        echo '</div>';
+        echo '<div id="contenu-oeuvre">';
+        echo '<h1>'. $oeuvre14['contenu']['titre'].'</h1>';
+        echo '<p class="decription">'. $oeuvre14['contenu']['description'] .'</p>';
+        echo '<p class="description-complete">'. $oeuvre14['contenu']['description_complete'] .' </p>';
+        echo '</div>';
+        echo '</article>';
+    ?>
+
 </main>
     <?php
         include "footer.php";

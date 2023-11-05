@@ -13,18 +13,20 @@
     include 'header.php';
 ?>
 <main>
-    <article id="detail-oeuvre">
-        <div id="img-oeuvre">
-            <img src="img/pawel-czerwinski.png" alt="Chromatics">
-        </div>
-        <div id="contenu-oeuvre">
-            <h1>Chromatics</h1>
-            <p class="description">Jean-Michel Delatronchette</p>
-            <p class="description-complete">
-                Vivamus commodo non libero at hendrerit. In lacinia dui sit amet pellentesque iaculis. Donec at ultricies sem porttitor.
-            </p>
-        </div>
-    </article>
+    <?php include 'oeuvres.php';
+
+        echo '<article id="detail-oeuvre">';
+        echo '<div id="img-oeuvre">';
+        echo '<img src="'.$oeuvre6['img'].'" alt="'.$oeuvre6['alt'].'">';
+        echo '</div>';
+        echo '<div id="contenu-oeuvre">';
+        echo '<h1>'. $oeuvre6['contenu']['titre'].'</h1>';
+        echo '<p class="decription">'. $oeuvre6['contenu']['description'] .'</p>';
+        echo '<p class="description-complete">'. $oeuvre6['contenu']['description_complete'] .' </p>';
+        echo '</div>';
+        echo '</article>';
+    ?>
+
 </main>
 <?php
     include "footer.php";
